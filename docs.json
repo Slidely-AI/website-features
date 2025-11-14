@@ -1,87 +1,45 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mint Starter Kit",
+  "theme": "almond",
+  "name": "Slidely AI",
+  "description": "Complete documentation for Slidely AI - Create amazing presentations with AI-powered slides",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#E3511F",
+    "light": "#E9744C",
+    "dark": "#B64119"
   },
   "favicon": "/favicon.svg",
+  "styling": {
+    "modeToggle": {
+      "default": "light"
+    }
+  },
   "navigation": {
-    "tabs": [
+    "groups": [
       {
-        "tab": "Guides",
-        "groups": [
-          {
-            "group": "Getting started",
-            "pages": [
-              "index",
-              "quickstart",
-              "development"
-            ]
-          },
-          {
-            "group": "Customization",
-            "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
-          {
-            "group": "Writing content",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
-          }
+        "group": "Getting Started",
+        "pages": [
+          "index",
+          "quickstart"
         ]
       },
       {
-        "tab": "API reference",
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
-            ]
-          }
+        "group": "Create PPT",
+        "pages": [
+          "create-ppt/introduction",
+          "create-ppt/getting-started",
+          "create-ppt/features"
+        ]
+      },
+      {
+        "group": "ChatPPT",
+        "pages": [
+          "chatppt/introduction",
+          "chatppt/getting-started",
+          "chatppt/features"
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
     "light": "/logo/light.svg",
@@ -90,14 +48,14 @@
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "Pricing",
+        "href": "https://slidely.ai/pricing"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Get Started",
+      "href": "https://slidely.ai/signin"
     }
   },
   "contextual": {
@@ -114,9 +72,51 @@
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://twitter.com/slidelyAI",
+      "linkedin": "https://www.linkedin.com/company/slidelyai"
+    },
+    "links": [
+      {
+        "header": "Product",
+        "items": [
+          {
+            "label": "Download add-in",
+            "href": "https://slidely.ai/download-addin"
+          },
+          {
+            "label": "Pricing",
+            "href": "https://slidely.ai/pricing"
+          }
+        ]
+      },
+      {
+        "header": "Company",
+        "items": [
+          {
+            "label": "About",
+            "href": "https://www.ycombinator.com/companies/slidely-ai"
+          },
+          {
+            "label": "Blog",
+            "href": "https://slidely.ai/blog"
+          }
+        ]
+      }
+    ]
+  },
+  "seo": {
+    "title": "Slidely AI Documentation",
+    "description": "Complete guide to using Slidely AI - Create amazing presentations with AI-powered slides",
+    "indexing": "navigable",
+    "search": {
+      "prompt": "Search documentation..."
+    }
+  },
+  "errors": {
+    "404": {
+      "redirect": false,
+      "title": "Page not found",
+      "description": "The page you're looking for doesn't exist. [Go home](/)."
     }
   }
 }
