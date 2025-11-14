@@ -19,8 +19,9 @@
       {
         "group": "Getting Started",
         "pages": [
-          "index",
-          "quickstart"
+          "get-started/index",
+          "get-started/web-app",
+          "get-started/powerpoint-addin"
         ]
       },
       {
